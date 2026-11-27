@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>庆祝北槿的20岁生日！</title>
+  <meta name="description" content="庆祝北槿的20岁生日：一个用拼贴照片记录朋友与这一天的临时网站。" />
+  <link rel="stylesheet" href="assets/style.css?v=20261127b" />
+  <link rel="stylesheet" href="assets/fonts.css?v=20261127b" />
+</head>
+<body>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>庆祝北槿的20岁生日！ · 生日快乐 🎂 · 2026.11.20 — </span>
+      <span>庆祝北槿的20岁生日！ · 生日快乐 🎂 · 2026.11.20 — </span>
+    </div>
+  </div>
+
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="北槿与他的朋友 首页">北槿与他的朋友</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#works">照片</a>
+      <a href="#about">关于</a>
+      <button class="music-toggle" id="music-toggle" type="button">音乐盒 🎵</button>
+    </nav>
+    <a class="cta" href="images/wechat.jpg" target="_blank" rel="noopener">联系北槿 ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="sticker">VOL.01 / 2026 影像集</p>
+        <h1>
+          庆祝<br />
+          <span class="hl">北槿</span>的<br />
+          <span class="red">20岁生日！</span>
+        </h1>
+        <p class="lede">
+          本网站由：<br />念穹、<br />晨光映远岫、H<span class="special-name">ᯐ</span>u<span class="special-name">ෆ</span>、Neu-Kaffee、🦋（蒋）、CaTvT（秋秋）<br />Amagi(任)、拼刀刀、<br />Berr1yo_浆果.....赞助制作
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#works">看照片 <span aria-hidden="true">↓</span></a>
+          <span class="hero-count">19 张 / 4 类</span>
+        </div>
+      </div>
+
+      <div class="hero-stack" aria-hidden="true">
+        <span class="blob blob-lime"></span>
+        <span class="blob blob-blue"></span>
+        <figure class="polaroid p1"><img src="images/gift.jpg" alt="网易云音乐的生日礼物：生日快乐，是北槿啊qvq" width="1240" height="2772" /></figure>
+        <figure class="polaroid p2"><img src="images/meme.jpg" alt="蓝发猫耳角色哭着的表情包" width="1020" height="1024" /></figure>
+        <figure class="polaroid p3"><img src="images/meal.jpg" alt="和朋友在肯德基过生日" width="2364" height="1773" /></figure>
+        <span class="stack-note">北槿 / 2026</span>
+      </div>
+    </section>
+
+    <section id="works" class="works" aria-labelledby="works-title">
+      <div class="works-head">
+        <h2 id="works-title">照片 <span>PHOTOS</span></h2>
+        <div class="tools">
+          <div class="filters" id="filters" role="group" aria-label="按分类筛选"></div>
+          <button class="shuffle" id="shuffle" type="button">洗牌 <span aria-hidden="true">↻</span></button>
+        </div>
+      </div>
+
+      <noscript><p class="notice">此模板需要启用 JavaScript 才能展示图片。</p></noscript>
+
+      <div class="grid" id="grid"></div>
+      <p class="notice" id="empty" hidden>该分类下暂无照片。</p>
+    </section>
+
+    <section id="about" class="about">
+      <p class="label">ABOUT</p>
+      <div class="about-body">
+        <p>这是一个用于记录北槿和他朋友们的临时网站（之后也许会转正也说不定？），感谢每一位参与我这次人生重要仪式的人，你们是我人生中最重要的支点，2026....感谢有你，感谢有你们</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="footer-marquee" aria-hidden="true">
+      <div class="footer-track">
+        <span><b>生日快乐</b><i>🎂！</i><s></s><b>生日快乐</b><i>🎂！</i><s></s><b>生日快乐</b><i>🎂！</i><s></s><b>生日快乐</b><i>🎂！</i><s></s></span>
+        <span><b>生日快乐</b><i>🎂！</i><s></s><b>生日快乐</b><i>🎂！</i><s></s><b>生日快乐</b><i>🎂！</i><s></s><b>生日快乐</b><i>🎂！</i><s></s></span>
+      </div>
+    </div>
+
+    <div class="footer-inner">
+      <div class="footer-meta">
+        <p>这里是北槿2026.11.20日建立</p>
+        <p>心有宏愿，方为少年</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 北槿与他的朋友</span>
+      <span>零依赖 · 纯静态</span>
+    </div>
+  </footer>
+
+  <!-- 音乐盒 -->
+  <button class="music-fab" id="music-fab" type="button" aria-label="打开音乐盒">🎵</button>
+  <div class="music-box is-open" id="music-box" aria-label="音乐盒">
+    <div class="music-head">
+      <span>音乐盒 🎵</span>
+      <button id="music-close" type="button" aria-label="关闭音乐盒">✕</button>
+    </div>
+    <div class="music-body">
+      <div class="music-track">
+        <span class="music-disc" aria-hidden="true">💿</span>
+        <div class="music-info">
+          <p class="music-title">Blessing 世界版</p>
+          <p class="music-artist">茶理理 / V.A.</p>
+        </div>
+        <a class="music-link" href="https://music.163.com/song?id=31234244" target="_blank" rel="noopener">网易云 ↗</a>
+      </div>
+      <div class="music-controls">
+        <button id="music-play" type="button" aria-label="播放">▶</button>
+        <input id="music-progress" type="range" min="0" max="1000" value="0" aria-label="播放进度" />
+        <span class="music-time" id="music-time">00:00</span>
+        <button id="music-speed" type="button" aria-label="播放速度">1.0×</button>
+      </div>
+      <audio id="music-audio" src="assets/bgm.mp3" loop preload="metadata"></audio>
+    </div>
+  </div>
+
+  <!-- 灯箱 -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片浏览" aria-hidden="true">
+    <div class="lb-backdrop" data-close></div>
+
+    <button class="lb-close" id="lb-close" type="button" aria-label="关闭（Esc）">✕</button>
+    <button class="lb-prev" id="lb-prev" type="button" aria-label="上一张（←）">←</button>
+
+    <figure class="lb-figure">
+      <img id="lb-img" alt="" />
+      <figcaption>
+        <span class="lb-no" id="lb-no"></span>
+        <span class="lb-title" id="lb-title"></span>
+        <span class="lb-cat" id="lb-cat"></span>
+      </figcaption>
+    </figure>
+
+    <button class="lb-next" id="lb-next" type="button" aria-label="下一张（→）">→</button>
+    <span class="lb-count" id="lb-count"></span>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    (() => {
+      const toggle = document.getElementById("music-toggle");
+      const box = document.getElementById("music-box");
+      const close = document.getElementById("music-close");
+      const audio = document.getElementById("music-audio");
+      const playBtn = document.getElementById("music-play");
+      const progress = document.getElementById("music-progress");
+      const timeEl = document.getElementById("music-time");
+      const speedBtn = document.getElementById("music-speed");
+
+      const speeds = [1.0, 0.9, 0.8];
+      let speedIndex = 0;
+      let userClosed = false;
+
+      audio.playbackRate = speeds[speedIndex];
+
+      function format(seconds) {
+        if (!Number.isFinite(seconds)) return "00:00";
+        const m = Math.floor(seconds / 60);
+        const s = Math.floor(seconds % 60);
+        return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+      }
+
+      function setPlaying(isPlaying) {
+        playBtn.textContent = isPlaying ? "⏸" : "▶";
+        playBtn.setAttribute("aria-label", isPlaying ? "暂停" : "播放");
+      }
+
+      function open() {
+        userClosed = false;
+        box.classList.add("is-open");
+      }
+
+      function closeBox() {
+        userClosed = true;
+        box.classList.remove("is-open");
+        audio.pause();
+      }
+
+      function tryPlay() {
+        audio.play().catch(() => {
+          setPlaying(false);
+        });
+      }
+
+      toggle.addEventListener("click", () => {
+        if (box.classList.contains("is-open")) closeBox();
+        else open();
+      });
+
+      const fab = document.getElementById("music-fab");
+      if (fab) fab.addEventListener("click", open);
+
+      close.addEventListener("click", closeBox);
+
+      playBtn.addEventListener("click", () => {
+        if (audio.paused) tryPlay();
+        else audio.pause();
+      });
+
+      audio.addEventListener("play", () => setPlaying(true));
+      audio.addEventListener("pause", () => setPlaying(false));
+
+      audio.addEventListener("timeupdate", () => {
+        if (!audio.duration) return;
+        progress.value = String(
+          Math.round((audio.currentTime / audio.duration) * 1000)
+        );
+        timeEl.textContent = format(audio.currentTime);
+      });
+
+      progress.addEventListener("input", () => {
+        if (!audio.duration) return;
+        audio.currentTime = (Number(progress.value) / 1000) * audio.duration;
+      });
+
+      speedBtn.addEventListener("click", () => {
+        speedIndex = (speedIndex + 1) % speeds.length;
+        audio.playbackRate = speeds[speedIndex];
+        speedBtn.textContent = speeds[speedIndex].toFixed(1) + "×";
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeBox();
+      });
+
+      document.addEventListener(
+        "pointerdown",
+        () => {
+          if (box.classList.contains("is-open") && audio.paused) tryPlay();
+        },
+        { once: true }
+      );
+
+      setTimeout(() => {
+        if (!userClosed) {
+          open();
+          tryPlay();
+        }
+      }, 3000);
+    })();
+  </script>
+</body>
+</html>
